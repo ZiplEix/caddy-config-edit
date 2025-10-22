@@ -135,7 +135,7 @@ go run .
     |------------|-----------|-------------|---------|
     | --container | -c       | Docker container name running Caddy | `caddy` |
     | --config   | -f        | Path to Caddyfile inside the container | `/etc/caddy/Caddyfile` |
-    | --no-tty   |           | Disable TTY mode when executing docker commands | `false` |
+    | --tty      |           | Attach a TTY (-t) in addition to -i for docker exec | `false` |
     | --quiet    | -q        | Reduce output verbosity (only errors) | `false` |
 
     What is runs:

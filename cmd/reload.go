@@ -71,6 +71,6 @@ func init() {
 
 	reloadCmd.Flags().StringVarP(&reloadContainer, "container", "c", "caddy", "Docker container name running Caddy")
 	reloadCmd.Flags().StringVarP(&reloadConfig, "config", "f", "/etc/caddy/Caddyfile", "Path to Caddyfile inside the container")
-	reloadCmd.Flags().BoolVar(&reloadTTY, "tty", true, "Attach a TTY (-t) in addition to -i for docker exec")
+	reloadCmd.Flags().BoolVar(&reloadTTY, "tty", false, "Attach a TTY (-t) in addition to -i for docker exec")
 	reloadCmd.Flags().BoolVarP(&reloadQuiet, "quiet", "q", false, "Reduce output verbosity (only errors)")
 }
